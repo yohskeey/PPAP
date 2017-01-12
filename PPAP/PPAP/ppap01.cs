@@ -13,6 +13,7 @@ namespace PPAP
             var pen = "ペン";
             var pineapple = "パイナッポー";
             var apple = "アッポー";
+            var words = new[] { pen, pineapple, apple };
             var successPPAP = new[] { pen, pineapple, apple, pen };   // 正答
             var queuePPAP = new Queue<string>();
             var rnd = new Random();
@@ -20,23 +21,13 @@ namespace PPAP
 
             while (true)
             {
-                var i_have_a = pen;
-                var rNum = rnd.Next(0, 3);
-                switch (rNum)
-                {
-                    case 0:
-                        i_have_a = pineapple;
-                        break;
-                    case 1:
-                        i_have_a = apple;
-                        break;
-                }
+                var i_have_a = words[rnd.Next(0, words.Length)];
                 Console.Write(i_have_a);
 
                 queuePPAP.Enqueue(i_have_a);
                 countPPAP++;
 
-                if (queuePPAP.Count > 4)
+                if (queuePPAP.Count > successPPAP.Length)
                 {
                     //最新4件を保存する
                     queuePPAP.Dequeue();

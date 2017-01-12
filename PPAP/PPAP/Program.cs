@@ -8,9 +8,9 @@ namespace PPAP
     {
         static void Main(string[] args)
         {
-            //var ppap = new ppap01();
-            var ppap = new ppap02();
-            ppap.startPPAP();
+            //new ppap01().startPPAP();;
+            //new ppap02().startPPAP();
+            new ppap03().startPPAP();
         }
     }
 }
