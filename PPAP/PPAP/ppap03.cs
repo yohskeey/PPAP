@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PPAP
 {
-    class ppap03
+    class PPAP03
     {
-        public void startPPAP()
+        public void StartPPAP()
         {
             var pen = "ペン";
             var pai = "パイ";
@@ -57,7 +55,7 @@ namespace PPAP
                 }
                 if (queuePopTeamEpic.ToArray().SequenceEqual(successPopTeamEpic))
                 {
-                    Console.WriteLine("\n\nエイサァァ～イハラマスコ～イ（ぜったい {0}回 流行る）", countPPAP);
+                    Console.WriteLine("\n\nエイサァァ～イハラマスコ～イ（ぜったい {0}回 流行る）\n", countPPAP);
                     break;
                 }
 

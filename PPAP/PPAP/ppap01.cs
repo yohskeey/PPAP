@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PPAP
 {
-    class ppap01
+    class PPAP01
     {
-        public void startPPAP()
+        public void StartPPAP()
         {
             var pen = "ペン";
             var pineapple = "パイナッポー";

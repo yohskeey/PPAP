@@ -8,9 +8,9 @@ namespace PPAP
     {
         static void Main(string[] args)
         {
-            //new ppap01().startPPAP();;
-            //new ppap02().startPPAP();
-            new ppap03().startPPAP();
+            //new PPAP01().StartPPAP();;
+            //new PPAP02().StartPPAP();
+            new PPAP03().StartPPAP();
         }
     }
 }
